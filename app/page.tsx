@@ -1,10 +1,12 @@
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import { db } from "@/lib/db";
+import { prisma } from "@/lib/prisma";
 
-export default function Home() {
+export default async function Home() {
+
   return (
-    <div className="flex min-h-full flex-col items-center justify-center p-24">
-      <Button className="cursor-pointer">Click me</Button>
+    <div className="flex min-h-screen flex-col items-center justify-between p-24">
+      <Button>Click me</Button>
     </div>
   );
 }
